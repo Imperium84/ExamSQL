@@ -1,0 +1,11 @@
+CREATE SCHEMA examSQL
+DEFAULT CHARACTER SET utf8 
+DEFAULT COLLATE utf8_general_ci;
+
+CREATE USER 'stagiaire'@'localhost' IDENTIFIED BY 'stagiaire';
+
+GRANT SELECT, CREATE, INSERT, UPDATE, DELETE
+ON examSQL.*
+TO 'stagiaire'@'localhost';
+
+FLUSH PRIVILEGES;

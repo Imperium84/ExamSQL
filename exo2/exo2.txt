@@ -1,0 +1,41 @@
+TABLE etat:
+idEtat : 1
+nomEtat: Andra PRADESH
+
+
+TABLE ruralUrbain:
+idtypeEtat: 1
+ruralUrbain: Rural
+
+TABLE etatRuralUrbain
+idEtat: 1
+idTypeEtat: 1
+
+
+
+-----------------------------------------------------------------------------------------------
+
+TABLE latrines:
+idLatrines: 1
+libLatrines: PitLatrine
+
+TABLE statsLatrines:
+idNbres: 1
+nbresLatrine: 809705
+idLatrines: 1
+
+
+
+-----------------------------------------------------------------------------------------------
+
+TABLE  typeSol:
+idTypeSol: 1
+libTypeSol: Mud
+
+TABLE statsSol:
+idNbresSol: 1
+nbresSol : 7997880
+idTypeSol: 1
+
+
+

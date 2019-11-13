@@ -1,0 +1,55 @@
+USE examSQL;
+
+CREATE TABLE etat (
+idEtat INT UNSIGNED NOT NULL AUTO_INCREMENT,
+nomEtat VARCHAR(128) NOT NULL,
+typeEtat VARCHAR(48) NOT NULL,
+PRIMARY KEY (idEtat)
+);
+
+/*LATRINES*/
+CREATE TABLE latrines(
+idLatrine INT UNSIGNED NOT NULL AUTO_INCREMENT,
+libLatrine VARCHAR(48) NOT NULL,
+PRIMARY KEY (idLatrine)
+);
+
+
+CREATE TABLE statsLatrines(
+idNbresLatrines INT UNSIGNED NOT NULL AUTO_INCREMENT,
+nbresLatrines INT UNSIGNED NOT NULL,
+PRIMARY KEY(idNbresLatrines)
+);
+
+CREATE TABLE statsAndLatrines(
+idLatrine INT UNSIGNED NOT NULL, 
+idNbresLatrines INT UNSIGNED NOT NULL,
+UNIQUE (idLatrine, idNbresLatrines)
+);
+
+/*SOL*/
+CREATE TABLE typeSol(
+idTypeSol INT UNSIGNED NOT NULL AUTO_INCREMENT,
+libTypeSol VARCHAR(128) NOT NULL,
+PRIMARY KEY (idTypeSol)
+);
+
+CREATE TABLE statsSol(
+idNbresSol INT UNSIGNED NOT NULL AUTO_INCREMENT,
+nbresSol INT UNSIGNED NOT NULL,
+PRIMARY KEY(idNbresSol)
+);
+
+CREATE TABLE statsAndSol(
+idTypeSol INT UNSIGNED NOT NULL,
+idNbresSol INT UNSIGNED NOT NULL,
+UNIQUE(idTypeSol, idNbresSol)
+);
+
+
+
+
+
+
+
+
